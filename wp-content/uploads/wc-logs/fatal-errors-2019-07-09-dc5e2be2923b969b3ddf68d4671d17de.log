@@ -1,0 +1,90 @@
+2019-07-09T07:13:14+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function isspaymentfunctions::return_amount(), 5 passed in /var/www/html/stest/wp-content/plugins/istripe-switch/Iclass-stripe.php on line 516 and exactly 6 expected in /var/www/html/stest/wp-content/plugins/istripe-switch/Iclass-payment-functions.php:160
+Stack trace:
+#0 /var/www/html/stest/wp-content/plugins/istripe-switch/Iclass-stripe.php(516): isspaymentfunctions->return_amount(Array, 'ch_1EtrT1KnO5wh...', 824, '32.00', false)
+#1 /var/www/html/stest/wp-content/plugins/woocommerce/includes/wc-order-functions.php(661): Istripe_gc->process_refund(824, '32.00', '')
+#2 /var/www/html/stest/wp-content/plugins/woocommerce/includes/wc-order-functions.php(590): wc_refund_payment(Object(WC_Order), '32.00', '')
+#3 /var/www/html/stest/wp-content/plugins/woocommerce/includes/class-wc-ajax.php(1857): wc_create_refund(Array)
+#4 /var/www/html/stest/wp-includes/class-wp-hook.php(286): WC_AJAX::refund_line_items('')
+#5 /var/www/html/stest/wp-includes/class-wp-hook.php(310):  in /var/www/html/stest/wp-content/plugins/istripe-switch/Iclass-payment-functions.php on line 160
+
+2019-07-09T07:23:44+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function isspaymentfunctions::return_amount(), 5 passed in /var/www/html/stest/wp-content/plugins/istripe-switch/Iclass-stripe.php on line 516 and exactly 6 expected in /var/www/html/stest/wp-content/plugins/istripe-switch/Iclass-payment-functions.php:160
+Stack trace:
+#0 /var/www/html/stest/wp-content/plugins/istripe-switch/Iclass-stripe.php(516): isspaymentfunctions->return_amount(Array, 'ch_1EtrT1KnO5wh...', 824, '42.00', false)
+#1 /var/www/html/stest/wp-content/plugins/woocommerce/includes/wc-order-functions.php(661): Istripe_gc->process_refund(824, '42.00', '')
+#2 /var/www/html/stest/wp-content/plugins/woocommerce/includes/wc-order-functions.php(590): wc_refund_payment(Object(WC_Order), '42.00', '')
+#3 /var/www/html/stest/wp-content/plugins/woocommerce/includes/class-wc-ajax.php(1857): wc_create_refund(Array)
+#4 /var/www/html/stest/wp-includes/class-wp-hook.php(286): WC_AJAX::refund_line_items('')
+#5 /var/www/html/stest/wp-includes/class-wp-hook.php(310):  in /var/www/html/stest/wp-content/plugins/istripe-switch/Iclass-payment-functions.php on line 160
+
+2019-07-09T11:35:52+00:00 CRITICAL Uncaught WC_Stripe_Exception: WP_Error Object
+(
+    [errors] => Array
+        (
+            [http_request_failed] => Array
+                (
+                    [0] => cURL error 7: Failed to connect to api.stripe.com port 443: Connection timed out
+                )
+
+        )
+
+    [error_data] => Array
+        (
+        )
+
+)
+ in /var/www/html/stest/wp-content/plugins/woocommerce-gateway-stripe/includes/class-wc-stripe-api.php:138
+Stack trace:
+#0 /var/www/html/stest/wp-content/plugins/woocommerce-gateway-stripe/includes/class-wc-stripe-customer.php(270): WC_Stripe_API::request(Array, 'customers/cus_F...', 'GET')
+#1 /var/www/html/stest/wp-content/plugins/woocommerce-gateway-stripe/includes/class-wc-stripe-payment-tokens.php(103): WC_Stripe_Customer->get_sources()
+#2 /var/www/html/stest/wp-includes/class-wp-hook.php(286): WC_Stripe_Payment_Tokens->woocommerce_get_customer_payment_tokens(Array, 1, 'stripe')
+#3 /var/www/html/stest/wp-includes/plugin.php(208): WP_Hook->apply_filters(Array, Array)
+#4 /var/www/html/ in /var/www/html/stest/wp-content/plugins/woocommerce-gateway-stripe/includes/class-wc-stripe-api.php on line 138
+
+2019-07-09T11:36:59+00:00 CRITICAL Uncaught WC_Stripe_Exception: WP_Error Object
+(
+    [errors] => Array
+        (
+            [http_request_failed] => Array
+                (
+                    [0] => cURL error 28: Operation timed out after 10000 milliseconds with 0 out of 0 bytes received
+                )
+
+        )
+
+    [error_data] => Array
+        (
+        )
+
+)
+ in /var/www/html/stest/wp-content/plugins/woocommerce-gateway-stripe/includes/class-wc-stripe-api.php:138
+Stack trace:
+#0 /var/www/html/stest/wp-content/plugins/woocommerce-gateway-stripe/includes/class-wc-stripe-customer.php(270): WC_Stripe_API::request(Array, 'customers/cus_F...', 'GET')
+#1 /var/www/html/stest/wp-content/plugins/woocommerce-gateway-stripe/includes/class-wc-stripe-payment-tokens.php(103): WC_Stripe_Customer->get_sources()
+#2 /var/www/html/stest/wp-includes/class-wp-hook.php(286): WC_Stripe_Payment_Tokens->woocommerce_get_customer_payment_tokens(Array, 1, 'stripe')
+#3 /var/www/html/stest/wp-includes/plugin.php(208): WP_Hook->apply_filters(Array, Array)
+#4 /var in /var/www/html/stest/wp-content/plugins/woocommerce-gateway-stripe/includes/class-wc-stripe-api.php on line 138
+
+2019-07-09T11:39:09+00:00 CRITICAL Uncaught WC_Stripe_Exception: WP_Error Object
+(
+    [errors] => Array
+        (
+            [http_request_failed] => Array
+                (
+                    [0] => cURL error 28: Operation timed out after 10000 milliseconds with 0 out of 0 bytes received
+                )
+
+        )
+
+    [error_data] => Array
+        (
+        )
+
+)
+ in /var/www/html/stest/wp-content/plugins/woocommerce-gateway-stripe/includes/class-wc-stripe-api.php:138
+Stack trace:
+#0 /var/www/html/stest/wp-content/plugins/woocommerce-gateway-stripe/includes/class-wc-stripe-customer.php(270): WC_Stripe_API::request(Array, 'customers/cus_F...', 'GET')
+#1 /var/www/html/stest/wp-content/plugins/woocommerce-gateway-stripe/includes/class-wc-stripe-payment-tokens.php(103): WC_Stripe_Customer->get_sources()
+#2 /var/www/html/stest/wp-includes/class-wp-hook.php(286): WC_Stripe_Payment_Tokens->woocommerce_get_customer_payment_tokens(Array, 1, 'stripe')
+#3 /var/www/html/stest/wp-includes/plugin.php(208): WP_Hook->apply_filters(Array, Array)
+#4 /var in /var/www/html/stest/wp-content/plugins/woocommerce-gateway-stripe/includes/class-wc-stripe-api.php on line 138
+

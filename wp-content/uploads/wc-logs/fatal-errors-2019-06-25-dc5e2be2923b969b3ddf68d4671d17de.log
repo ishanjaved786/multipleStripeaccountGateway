@@ -1,0 +1,11 @@
+2019-06-25T09:57:25+00:00 CRITICAL Uncaught Error: Call to undefined method WC_Subscriptions_Order::get_price_per_period() in C:\xampp\htdocs\stest\wp-content\plugins\istripe-switch\Iclass-stripe.php:260
+Stack trace:
+#0 C:\xampp\htdocs\stest\wp-content\plugins\woocommerce\includes\class-wc-checkout.php(923): Istripe_gc->process_payment(559)
+#1 C:\xampp\htdocs\stest\wp-content\plugins\woocommerce\includes\class-wc-checkout.php(1123): WC_Checkout->process_order_payment(559, 'istripe')
+#2 C:\xampp\htdocs\stest\wp-content\plugins\woocommerce\includes\class-wc-ajax.php(462): WC_Checkout->process_checkout()
+#3 C:\xampp\htdocs\stest\wp-includes\class-wp-hook.php(286): WC_AJAX::checkout('')
+#4 C:\xampp\htdocs\stest\wp-includes\class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#5 C:\xampp\htdocs\stest\wp-includes\plugin.php(465): WP_Hook->do_action(Array)
+#6 C:\xampp\htdocs\stest\wp-content\plugins\woocommerce\includes\class-wc-ajax.php(87): do_action('wc_ajax_checkou...')
+#7 C:\xampp\htdocs\stest\wp-includes\class-wp-hook.php(286): WC_AJAX::do in C:\xampp\htdocs\stest\wp-content\plugins\istripe-switch\Iclass-stripe.php on line 260
+

@@ -1,0 +1,12 @@
+2019-06-28T12:45:04+00:00 CRITICAL Uncaught Error: Call to a member function get_variation_id() on null in C:\xampp\htdocs\stest\wp-content\plugins\istripe-switch\Iclass-stripe.php:246
+Stack trace:
+#0 C:\xampp\htdocs\stest\wp-content\plugins\woocommerce\includes\class-wc-checkout.php(923): Istripe_gc->process_payment(656)
+#1 C:\xampp\htdocs\stest\wp-content\plugins\woocommerce\includes\class-wc-checkout.php(1123): WC_Checkout->process_order_payment(656, 'istripe')
+#2 C:\xampp\htdocs\stest\wp-content\plugins\woocommerce\includes\class-wc-ajax.php(462): WC_Checkout->process_checkout()
+#3 C:\xampp\htdocs\stest\wp-includes\class-wp-hook.php(286): WC_AJAX::checkout('')
+#4 C:\xampp\htdocs\stest\wp-includes\class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#5 C:\xampp\htdocs\stest\wp-includes\plugin.php(465): WP_Hook->do_action(Array)
+#6 C:\xampp\htdocs\stest\wp-content\plugins\woocommerce\includes\class-wc-ajax.php(87): do_action('wc_ajax_checkou...')
+#7 C:\xampp\htdocs\stest\wp-includes\class-wp-hook.php(286): WC_AJAX::do_wc_ajax('')
+#8 C:\ in C:\xampp\htdocs\stest\wp-content\plugins\istripe-switch\Iclass-stripe.php on line 246
+
